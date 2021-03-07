@@ -46,6 +46,14 @@ body {
     }
 }
 
+.warnaFooter {
+    background-color: #2f55a3;
+}
+
+.warnaFooter-copy {
+    background-color: #1c3464;
+}
+
 .footer {
     bottom: 0;
     width: 100%;
@@ -94,6 +102,11 @@ body {
 }
 .warnaText {
     color: #2f55a3;
+}
+
+.warnaLink {
+    color: white;
+    text-decoration: none;
 }
 
 .warnaText-bold {
