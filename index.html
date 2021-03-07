@@ -20,6 +20,10 @@
             background-repeat: repeat;
             max-height: fit-content;
         }
+        .btn:hover {
+            color: #2f55a3;
+            background-color: azure;
+        }
     </style>
 </head>
 
@@ -28,13 +32,15 @@
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a href="#" class="blue-text brand-logo" style="overflow-wrap:break-word" id="logo-container">Kampus
+                <a href="#" class="warnaText-bold" style="overflow-wrap:break-word" id="logo-container">Kampus
                     Indonesia</a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="blue-text" href="sass.html">Sass</a></li>
-                    <li><a class="blue-text" href="badges.html">Components</a></li>
-                    <li><a class="blue-text" href="collapsible.html">JavaScript</a></li>
+                <ul id="nav-mobile" class="warnaText right hide-on-med-and-down">
+                    <li><a class="warnaText" href="sass.html">Kampus</a></li>
+                    <li><a class="warnaText" href="badges.html">Jurusan</a></li>
+                    <li><a class="warnaText" href="collapsible.html">Program Studi</a></li>
+                    <li><a class="warnaText" href="collapsible.html">Artikel</a></li>
+                    <li><a class="warnaText" href="collapsible.html">Blog</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,83 +51,173 @@
     <!-- Awal Konten -->
     <div class="container">
 
-        <div class="center blue-text">
-            <h3 class="font">Bingung Mau Kuliah Dimana?</h3>
-            <h3 class="font">Cari disini aja</h3>
+        <div class="kop center blue-text">
+            <img src="img/kampusIndonesia.png" alt="">
+            <h3 class="warnaText font">Bingung Mau Kuliah Dimana?</h3>
+            <h3 class="warnaText font">Cari disini aja</h3>
             <div class="box">
                 <div class="container-1">
-                    <input type="search" id="search" placeholder="Masukkan Nama Kampus" />
-
-                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Masukkan Nama Kampus" class="center" />
+                    <!-- <span class="icon"><i class="fa fa-search"></i></span> -->
                 </div>
+                <button class="btn warnaBtn" type="submit" name="action">search
+                    <i class="material-icons right">search</i>
+                </button>
             </div>
         </div>
 
-        <h5 class="blue-text" style="border-left: 4px solid; padding-left: 4px;"><b>Kampus Unggulan</b></h5>
-        <div class="card z-depth-1 panjang">
+        <h5 class="warnaText" style="border-left: 4px solid; padding-left: 4px;"><b>Lokasi Kampus Populer</b></h5>
+        <div class="card z-depth-1 galeri panjang1">
             <div class="row">
                 <div class="col m12">
                     <div class="row">
+                        <!-- Kota Aceh -->
                         <div class="col s6 m4 l3">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="img/uinma.webp">
-                                    <span class="card-title activator white-text text-darken-4"><b>Universitas Islam
-                                            Negeri Malang</b></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Sejarah<i
-                                            class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <a href="#gambar1">
+                                        <img src="img/kota/aceh.webp" alt="">
+                                        <span>Aceh</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Kota Bali -->
                         <div class="col s6 m4 l3">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="img/uinsa.webp">
-                                    <span class="card-title activator white-text text-darken-4"><b>Universitas Islam
-                                            Negeri Malang</b></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Sejarah<i
-                                            class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/bali.webp" alt="">
+                                            <span>Bali</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Kota Bandung -->
                         <div class="col s6 m4 l3">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="img/uinma.webp">
-                                    <span class="card-title activator white-text text-darken-4"><b>Universitas Islam
-                                            Negeri Malang</b></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Sejarah<i
-                                            class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <a href="#gambar1">
+                                        <img src="img/kota/bandung.webp" alt="">
+                                        <span>Bandung</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Kota Gresik -->
                         <div class="col s6 m4 l3">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="img/uinma.webp">
-                                    <span class="card-title activator white-text text-darken-4"><b>Universitas Islam
-                                            Negeri Malang</b></span>
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/gresik.webp" alt="">
+                                            <span>Gresik</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Sejarah<i
-                                            class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                            </div>
+                        </div>
+                        <!-- Kota Jakarta -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <a href="#gambar1">
+                                        <img src="img/kota/jakarta.webp" alt="">
+                                        <span>Jakarta</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Jogja -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/jogja.webp" alt="">
+                                            <span>Jogja</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Kediri -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/kediri.webp" alt="">
+                                            <span>Kediri</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Malang -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/malang.webp" alt="">
+                                            <span>Malang</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Medan -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/medan.webp" alt="">
+                                            <span>Medan</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Surabaya -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/surabaya.webp" alt="">
+                                            <span>Surabaya</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Sidoarjo -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/sidoarjo.webp" alt="">
+                                            <span>Sidoarjo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kota Semarang -->
+                        <div class="col s6 m4 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <a href="#gambar1">
+                                            <img src="img/kota/semarang.webp" alt="">
+                                            <span>Semarang</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <ul class="pagination center">
+        <!-- <ul class="pagination center">
             <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
             <li class="active blue"><a href="#!">1</a></li>
             <li class="waves-effect"><a href="#!">2</a></li>
@@ -137,14 +233,15 @@
             <li class="waves-effect"><a href="#!">4</a></li>
             <li class="waves-effect"><a href="#!">5</a></li>
             <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
+        </ul> -->
         <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit
             <i class="material-icons right">send</i>
         </button>
         <br>
         <br> -->
-        <h5 class="blue-text" style="border-left: 4px solid; padding-left: 4px;"><b>JURUSAN FAVORIT</b></h5>
-        <div class="card z-depth-1">
+        <br>
+        <h5 class="warnaText" style="border-left: 4px solid; padding-left: 4px;"><b>Jurusan Favorit</b></h5>
+        <div class="card z-depth-1 panjang">
             <div class="row">
                 <div class="col m12">
                     <div class="row">
