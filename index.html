@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <style type="text/css">
         body {
             background-image: url("img/bgPutih.png");
@@ -36,10 +36,9 @@
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a href="#" class="warnaText-bold" style="overflow-wrap:break-word" id="logo-container">Kampus
+                <a href="#" class="warnaText-bold" style="overflow-wrap:break-word;" id="logo-container">Kampus
                     Indonesia</a>
-
-                <ul id="nav-mobile" class="warnaText right hide-on-med-and-down">
+                <ul id="nav-mobile" class="warnaText right hide-on-small-and-down">
                     <li><a class="warnaText" href="#kampus">Kampus</a></li>
                     <li><a class="warnaText" href="badges.html">Jurusan</a></li>
                     <li><a class="warnaText" href="collapsible.html">Artikel</a></li>
@@ -48,7 +47,6 @@
             </div>
         </nav>
     </div>
-
     <!-- Akhir Navigasi -->
 
     <!-- Awal Konten -->
@@ -69,7 +67,7 @@
             </div>
         </div>
         <h5 class="warnaText" style="border-left: 4px solid; padding-left: 4px;"><b>Lokasi Kampus Populer</b></h5>
-        <div class="card z-depth-1 galeri panjang1">
+        <div class="card z-depth-1 galeri panjang2">
             <div class="row">
                 <div class="col m12">
                     <div class="row">
@@ -229,12 +227,12 @@
         </div>
         <br>
         <h5 class="warnaText" style="border-left: 4px solid; padding-left: 4px;"><b>Jurusan Favorit</b></h5>
-        <div class="card z-depth-1 galeri panjang1">
+        <div class="card z-depth-1 galeri1 panjang1">
             <div class="row">
                 <div class="col m12">
                     <div class="row">
                         <!-- Akuntansi -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <a href="#gambar1">
@@ -245,7 +243,7 @@
                             </div>
                         </div>
                         <!-- DKV -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -258,7 +256,7 @@
                             </div>
                         </div>
                         <!-- Hukum -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <a href="#gambar1">
@@ -269,7 +267,7 @@
                             </div>
                         </div>
                         <!-- Kedokteran -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -282,7 +280,7 @@
                             </div>
                         </div>
                         <!-- Manajemen -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <a href="#gambar1">
@@ -293,7 +291,7 @@
                             </div>
                         </div>
                         <!-- PGSD -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -306,7 +304,7 @@
                             </div>
                         </div>
                         <!-- Psikologi -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -319,7 +317,7 @@
                             </div>
                         </div>
                         <!-- Sistem Informasi -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -332,7 +330,7 @@
                             </div>
                         </div>
                         <!-- Teknik Informatika -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -345,7 +343,7 @@
                             </div>
                         </div>
                         <!-- Teknik Kimia -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -358,7 +356,7 @@
                             </div>
                         </div>
                         <!-- Teknik Mesin -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -371,7 +369,7 @@
                             </div>
                         </div>
                         <!-- Teknik Sipil -->
-                        <div class="col s6 m4 l3">
+                        <div class="col s6 m4 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <div class="card-image waves-effect waves-block waves-light">
@@ -394,11 +392,11 @@
     <footer class="warnaFooter">
         <div class="container">
             <div class="row">
-                <div class="col l6">
+                <div class="col l6 m5 s12">
                     <h5 class="white-text">Kampus Indonesia</h5>
                     <p class="grey-text text-lighten-4">Mengabdi Untuk Negeri</p>
                 </div>
-                <div class="col l3">
+                <div class="col l3 m3 s12">
                     <h5 class="white-text">Menu</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="#!">Beranda</a></li>
@@ -406,29 +404,30 @@
                         <li><a class="grey-text text-lighten-3" href="#!">Galeri</a></li>
                     </ul>
                 </div>
-                <div class="col l3">
+                <div class="col l3 m3 s12">
                     <h5 class="white-text">Social Media</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">WhatsApp</a></li>                        
+                        <li><a class="grey-text text-lighten-3" href="#!">WhatsApp</a></li>
                     </ul>
                 </div>
-                <div class="col l12 center">
+                <div class="col l12 s12 center">
                     <h5 class="white-text">Alamat Kami</h5>
                     <ul>
-                        <p class="white-text">Jl. KH. Sulaiman No. 48 RT 02 RW 01 Gemurung Gedangan Sidoarjo</p>            
+                        <p class="white-text">Jl. KH. Sulaiman No. 48 RT 02 RW 01 Gemurung Gedangan Sidoarjo</p>
                     </ul>
                     <div class="row">
-                        <div class="col l6">
+                        <div class="col l6 s12">
                             <h5 class="white-text">Email</h5>
                             <p class="white-text">aflahazzaki123@gmail.com</p>
                         </div>
-                        <div class="col l6">
+                        <div class="col l6 s12">
                             <h5 class="white-text">No. Telepon</h5>
-                            <p class="white-text"><a class="white-text"href="https://wa.me/6283832515321" target="blank">083 832 515 321</a></p>
+                            <p class="white-text"><a class="white-text" href="https://wa.me/6283832515321"
+                                    target="blank">083 832 515 321</a></p>
                         </div>
                     </div>
                 </div>
@@ -436,7 +435,8 @@
         </div>
         <div class="warnaFooter-copy center">
             <div class="container white-text">
-                © 2021 Copyright by <a class="warnaLink" target="blank" href="https://www.instagram.com/aflah.azzaky__">Aflah Azzaky</a>
+                © 2021 Copyright by <a class="warnaLink" target="blank"
+                    href="https://www.instagram.com/aflah.azzaky__">Aflah Azzaky</a>
             </div>
         </div>
     </footer>

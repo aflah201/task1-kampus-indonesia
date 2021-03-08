@@ -1,10 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-    $(".dropdown-trigger").dropdown();
-
+document.addEventListener("DOMContentLoaded", function () {
+    // Activate sidebar nav
     var elems = document.querySelectorAll(".sidenav");
     M.Sidenav.init(elems);
     loadNav();
+
+    // // load page content
+    // var page = window.location.hash.substr(1);
+    // if (page == "") page = "index";
+    // loadPage(page);
 });
+
+// function loadPage(page) {
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function () {
+//         if (this.readyState === 4) {
+//             var content = document.querySelector("#body-content");
+//             if (this.status === 200) {
+//                 content.innerHTML = xhttp.responseText;
+//             } else if (this.status === 404) {
+//                 content.innerHTML = "<p>Ups... Halaman sedang dalam perbaikan.</p>";
+//             } else {
+//                 content.innerHTML = "<p>Ups... Halaman tidak dapat diakses.</p>";
+//             }
+//         }
+//     };
+//     xhttp.open("GET", "pages/" + page + ".html", true);
+//     xhttp.send();
+// }
 
 function loadNav() {
     var xhttp = new XMLHttpRequest();
@@ -22,8 +44,6 @@ function loadNav() {
                     var sidenav = document.querySelector(".sidenav");
                     M.Sidenav.getInstance(sidenav).close();
 
-                    var elems = document.querySelectorAll('.dropdown-trigger');
-                    M.Dropdown.init(elems);
                     // muat konten halaman yang dipanggil
                     page = event.target.getAttribute("href").substr(1);
                     loadPage(page);
@@ -31,3 +51,6 @@ function loadNav() {
             });
         }
     };
+    xhttp.open("GET", "nav.html", true);
+    xhttp.send();
+}

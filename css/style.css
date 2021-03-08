@@ -3,47 +3,18 @@ body {
     font-weight: bold;
 }
 
-.panjang1 {
+.panjang2 {
     max-height: 424px;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: transparent;
 }
 
-@media screen and (max-width: 1366px){
-    .panjang1 {
-        max-height: 424px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-color: transparent;
-    }
-}
-
-@media screen and (max-width: 683px){
-    .panjang1 {
-        max-height: 454px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-color: transparent;
-    }
-}
-
-@media screen and (max-width: 503px){
-    .panjang1 {
-        max-height: 654px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-color: transparent;
-    }
-}
-
-@media screen and (max-width: 342px){
-    .panjang1 {
-        max-height: 565px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-color: transparent;
-    }
+.panjang1 {
+    max-height: 484px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: transparent;
 }
 
 .warnaFooter {
@@ -68,22 +39,23 @@ body {
 
 .font {
     font-weight: bold;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 .ukuran {
     max-width: 250px;
     max-height: 900px;
 }
-.kop{
+
+/* .kop{
     margin-top: 90px;
     margin-bottom: 160px;
     margin-left: 0;
     margin-right: 0;
-}
+} */
 
-.kop img{
-    width: 300px;
+.kop img {
+    max-width: 300px;
 }
 
 .warnaBtn {
@@ -93,13 +65,14 @@ body {
 .btn1 {
     text-decoration: none;
     color: #fff;
-    background-color:azure;
+    background-color: azure;
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: background-color .2s ease-out;
     transition: background-color .2s ease-out;
     cursor: pointer;
 }
+
 .warnaText {
     color: #2f55a3;
 }
@@ -113,6 +86,7 @@ body {
     color: #2f55a3;
     font-size: 26px;
 }
+
 .box {
     margin: 50px auto;
     width: 300px;
@@ -152,15 +126,36 @@ body {
     /* transform: scale(1) rotate(360deg); */
 }
 
+.galeri1 span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 175px;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 1px 1px 1px #ddd; */
+    opacity: 0%;
+    transition: 0.3s;
+    /* transform: scale(0) rotate(0); */
+}
+
+.galeri1 a:hover span {
+    opacity: 1;
+    /* transform: scale(1) rotate(360deg); */
+}
+
 .container-1 input#search {
-    width: 300px;
+    width: 250px;
     height: 50px;
     background: #fff;
     border: 1px solid #2f55a3;
     font-size: 10pt;
-    float: left;
+    /* float: left; */
     color: white;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     border-radius: 40px;
     /* padding: 10px; */
     /* padding-left: 45px; */
@@ -185,4 +180,160 @@ body {
 .container-1 input#search:active {
     outline: none;
     background: #2f55a3;
+}
+
+/* Kumpulan Code Tampilan Responsive */
+
+/* Responsive Laptop */
+@media screen and (max-width: 1024px) {
+    .panjang1 {
+        max-height: 570px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 324px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+
+    .kop {
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+
+    .font {
+        font-size: 32px;
+    }
+}
+
+/* Responsive Tablet */
+@media screen and (max-width: 768px) {
+    .panjang1 {
+        max-height: 520px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 520px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+
+    .kop {
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+
+    .font {
+        font-size: 28px;
+    }
+}
+
+/* Responsive Mobile Large */
+@media screen and (max-width: 425px) {
+    .panjang1 {
+        max-height: 350px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 350px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .kop {
+        margin-top: 100px;
+        margin-bottom: 140px;
+    }
+
+    .kop img {
+        width: 170px;
+    }
+
+    .font {
+        font-size: 26px;
+    }
+
+    a#logo-container.warnaText-bold{
+        margin-left: 75px;
+    }
+}
+
+/* Responsive Mobile Medium */
+@media screen and (max-width: 375px) {
+    .panjang1 {
+        max-height: 310px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 310px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .kop {
+        margin-top: 85px;
+        margin-bottom: 155px;
+    }
+
+    .kop img {
+        width: 180px;
+    }
+
+    .font {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    a#logo-container.warnaText-bold{
+        margin-left: 55px;
+    }
+}
+
+/* Responsive Mobile Small */
+@media screen and (max-width: 320px) {
+    .panjang1 {
+        max-height: 180px;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 180px;
+        overflow-y: scroll;
+        background-color: transparent;
+    }
+
+    .kop {
+        margin-top: 80px;
+        margin-bottom: 140px;
+    }
+
+    .kop img {
+        width: 170px;
+    }
+
+    .font {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    a#logo-container.warnaText-bold{
+        margin-left: 25px;
+    }
 }
