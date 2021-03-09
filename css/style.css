@@ -47,6 +47,50 @@ body {
     max-height: 900px;
 }
 
+/* Dropdown CSS */
+.drop{
+    position: relative;
+    display: inline-block;
+}
+
+.dropLink{
+    background-color: transparent;
+    color: aquamarine;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(68, 68, 68, 0.5);
+    z-index: 0;
+}
+
+.drop-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover{
+    background-color: blueviolet;
+}
+
+.drop:hover .drop-content{
+    display: block;
+}
+
+.drop:hover .dropLink {
+    background-color: burlywood;
+}
+/* Akhir Dropdown */
+
 /* .kop{
     margin-top: 90px;
     margin-bottom: 160px;
@@ -182,7 +226,53 @@ body {
     background: #2f55a3;
 }
 
+div.navbar-fixed {
+    /* height: 90px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #2f55a3, #19647eff);
+}
+
 /* Kumpulan Code Tampilan Responsive */
+
+/* Responsive Laptop Large */
+@media screen and (max-width: 1440px) {
+    .panjang1 {
+        max-height: 570px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+
+    .panjang2 {
+        max-height: 324px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: transparent;
+    }
+    
+    .kop {
+        margin-top: 170px;
+        margin-bottom: 190px;
+    }
+
+    .kop img {
+        max-width: 350px;
+    }
+
+    .font {
+        font-size: 45px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    div.navbar-fixed {
+        height: 130px;
+    }
+}
 
 /* Responsive Laptop */
 @media screen and (max-width: 1024px) {
@@ -201,12 +291,20 @@ body {
     }
 
     .kop {
-        margin-top: 60px;
+        margin-top: 135px;
         margin-bottom: 120px;
     }
 
     .font {
         font-size: 32px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    div.navbar-fixed {
+        height: 110px;
     }
 }
 
@@ -227,12 +325,20 @@ body {
     }
 
     .kop {
-        margin-top: 60px;
+        margin-top: 130px;
         margin-bottom: 120px;
     }
 
     .font {
         font-size: 28px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
+    div.navbar-fixed {
+        height: 100px;
     }
 }
 
@@ -253,7 +359,7 @@ body {
     }
 
     .kop {
-        margin-top: 100px;
+        margin-top: 155px;
         margin-bottom: 140px;
     }
 
@@ -267,6 +373,14 @@ body {
 
     a#logo-container.warnaText-bold{
         margin-left: 75px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    div.navbar-fixed {
+        height: 100px;
     }
 }
 
@@ -287,7 +401,7 @@ body {
     }
 
     .kop {
-        margin-top: 85px;
+        margin-top: 155px;
         margin-bottom: 155px;
     }
 
@@ -302,6 +416,14 @@ body {
 
     a#logo-container.warnaText-bold{
         margin-left: 55px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+
+    div.navbar-fixed {
+        height: 95px;
     }
 }
 
@@ -320,7 +442,7 @@ body {
     }
 
     .kop {
-        margin-top: 80px;
+        margin-top: 150px;
         margin-bottom: 140px;
     }
 
@@ -335,5 +457,13 @@ body {
 
     a#logo-container.warnaText-bold{
         margin-left: 25px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    div.navbar-fixed {
+        height: 90px;
     }
 }
