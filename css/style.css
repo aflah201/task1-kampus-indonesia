@@ -239,14 +239,14 @@ div.navbar-fixed {
 /* Responsive Laptop Large */
 @media screen and (max-width: 1440px) {
     .panjang1 {
-        max-height: 570px;
+        max-height: 740px;
         overflow-x: hidden;
         overflow-y: hidden;
         background-color: transparent;
     }
 
     .panjang2 {
-        max-height: 324px;
+        max-height: 420px;
         overflow-x: hidden;
         overflow-y: hidden;
         background-color: transparent;
@@ -271,6 +271,50 @@ div.navbar-fixed {
 
     div.navbar-fixed {
         height: 130px;
+    }
+
+    .galeri span {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 135px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 175px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
     }
 }
 
@@ -306,6 +350,48 @@ div.navbar-fixed {
     div.navbar-fixed {
         height: 110px;
     }
+
+    .galeri span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 95px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 125px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
 }
 
 /* Responsive Tablet */
@@ -339,6 +425,48 @@ div.navbar-fixed {
 
     div.navbar-fixed {
         height: 100px;
+    }
+
+    .galeri span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 100px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 110px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
     }
 }
 
@@ -381,6 +509,48 @@ div.navbar-fixed {
 
     div.navbar-fixed {
         height: 100px;
+    }
+
+    .galeri span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 100px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 100px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
     }
 }
 
@@ -425,6 +595,48 @@ div.navbar-fixed {
     div.navbar-fixed {
         height: 95px;
     }
+
+    .galeri span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 90px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 90px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
 }
 
 /* Responsive Mobile Small */
@@ -465,5 +677,47 @@ div.navbar-fixed {
 
     div.navbar-fixed {
         height: 90px;
+    }
+
+    .galeri span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
+    }
+    
+    .galeri1 span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 1px #ddd; */
+        opacity: 0%;
+        transition: 0.3s;
+        /* transform: scale(0) rotate(0); */
+    }
+    
+    .galeri1 a:hover span {
+        opacity: 1;
+        /* transform: scale(1) rotate(360deg); */
     }
 }
