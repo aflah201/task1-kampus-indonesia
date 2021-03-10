@@ -234,6 +234,17 @@ div.navbar-fixed {
     background: linear-gradient(to bottom, #2f55a3, #19647eff);
 }
 
+div.col.s3.m3.l3 {
+    transition: 0.3s;
+}
+
+div.col.s3.m3.l3:hover {
+    background-color:#1c3464;
+    opacity: 1;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
 /* Kumpulan Code Tampilan Responsive */
 
 /* Responsive Laptop Large */
