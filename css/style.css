@@ -272,6 +272,11 @@ div.col.s3.m3.l3:hover {
         max-width: 350px;
     }
 
+    .kop-card {
+        margin-top: 170px;
+        margin-bottom: 190px;
+    }
+
     .font {
         font-size: 45px;
     }
@@ -672,7 +677,7 @@ div.col.s3.m3.l3:hover {
     .kop img {
         width: 170px;
     }
-
+    
     .font {
         font-size: 24px;
         line-height: 25px;
